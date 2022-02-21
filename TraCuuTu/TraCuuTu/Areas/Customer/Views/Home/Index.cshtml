@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Areas/Customer/Views/Shared/_Layout.cshtml";
+}
+
+<!-- #region Thông tin sinh viên -->
+<div class="container" data-select2-id="12">
+    <div class="page-title-container">
+        <div class="row">
+            <div class="col-auto mb-3 mb-md-0 me-auto">
+                <div class="w-auto">
+                    <h1 class="mb-0 pb-0 display-4" id="title">Tra Cứu</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg order-1 order-lg-0">
+            @using (Html.BeginForm())
+            {
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3" data-select2-id="11">
+                                <div class="w-100" data-select2-id="10">
+                                    <label class="form-label">Từ Tra Cứu</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Loại</label>
+                                <select class="form-select">
+                                    <option>Việt <> Anh</option>
+                                    <option>Anh <> Việt</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="col-12 col-lg-auto order-0 order-lg-1">
+            <div class="card mb-5 w-100 sw-lg-35">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #endregion -->
